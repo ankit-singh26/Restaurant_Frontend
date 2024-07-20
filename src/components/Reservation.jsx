@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `https://restaurantreservation-pqvx.onrender.com/api/v1/reservation/send`,
+        `https://localhost:3000/api/v1/reservation/send`,
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
